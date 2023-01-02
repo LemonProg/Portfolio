@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon's Portflio</title>
+    <script>
+        window.addEventListener("load", () => {
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("/sw.js");
+            }
+        })
+    </script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <img src="src/Logo sans fond.png" alt="Logo">
+        <h1 id="dot">•</h1>
+        <h1 class="pseudo">Lemon シ#7313</h1>
+    </div>
+    <div class="containerName">
+        <p>Hi, I’m</p>
+        <p class="pseudo name">Nathan,</p>
+        <p>I am 14 years old,</p>
+    </div>
+    <div class="containerText">
+        <p>I am able to code in Python, HTML/CSS/PHP, </p>
+        <p>I am currently learning Javascript, C#</p>
+    </div>
+    
+    <span id="sep">-------------------------------------------------------</span>
+
+    <form action="index.html" id="redirect">
+        <input type="submit" value="GITHUB" id="github">
+        <input type="submit" value="INSTAGRAM" id="insta">
+        <input type="submit" value="YOUTUBE" id="youtube">
+        <input type="submit" value="TIKTOK" id="tiktok">
+        <input type="submit" value="TRACKER.GG" id="tracker">
+    </form>
+    <script src="redirect.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background-color: rgb(21, 21, 21);
+    background-size: 1920px;
+}
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container img:hover {
+    transform: scale(1.15);
+    transition: 0.3s;
+}
+
+.containerName {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.container img {
+    height: 150px;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+h1 {
+    font-size: 35px;
+}
+#dot {
+    margin-right: 20px;
+}
+.pseudo {
+    background: rgb(137, 0, 250);
+    background: linear-gradient(61deg, rgba(158,0,255,1) 0%, rgba(0,255,255,1) 100%);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+}
+p {
+    font-size: 30px;
+    text-align: center;
+}
+
+.name {
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.name:hover {
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+input {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: rgb(137, 0, 250) solid 4px;
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+input:hover {
+    transform: scale(0.9);
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+    border: rgb(137, 0, 250) solid 4px;
+    background-color: rgb(137, 0, 250);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#sep {
+    width: 100%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1300px) {
+    form {
+        flex-direction: column;
+    }
+
+    input {
+        background-color: rgb(137, 0, 250);
+        border: none;
+        font-size: 30px;
+    }
+    input:hover {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #sep {
+        font-size: 0;
+    }
+      
+    #sep::before {
+        content: "-----------------------------------------";
+        font-size: 50px;
+    }
+
+    #dot {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+
+    .container img {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    #sep {
+        font-size: 0;
+    }
+      
+    #sep::before {
+        content: "----------------------";
+        font-size: 50px;
+    }
+
+    .containerName p {
+        font-size: 23px;
+    }
+
+    .containerName {
+        margin-top: 40px;
+    }
+
+    .name {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .containerText p {
+        width: 100%;
+        transform: scale(0.9);
+    }
+}
